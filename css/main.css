@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px; /* Configuración general de tamaño de fuente */
+    font-family: Arial, Helvetica, sans-serif; /* Fuentes base para todo el sitio */
+}
+
+a {
+    text-decoration: none; /* Remueve el subrayado en los enlaces */
+    cursor: pointer; /* Cambia el cursor a "puntero" al pasar por enlaces */
+}
+
+header {
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    height: 60px; /* Altura estándar del encabezado */
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end; /* Los elementos se alinean a la derecha */
+}
+
+header nav .nav-right-section {
+    width: 250px; /* Tamaño fijo para la sección derecha del menú */
+    display: flex; /* Alinea los elementos en línea */
+    list-style-type: none; /* Elimina los puntos de lista */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+nav .nav-right-section a {
+    margin-right: 10px; /* Espaciado entre los enlaces */
+    color: hsl(0, 0%, 0%); /* Color negro para los enlaces */
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url("https://static.thenounproject.com/png/756729-200.png"); /* Ícono de menú hamburguesa */
+    background-size: contain; /* Ajusta la imagen al tamaño del contenedor */
+    width: 25px;
+    height: 25px; /* Tamaño cuadrado del ícono */
+}
+
+nav .nav-right-section img {
+    border-radius: 50%; /* Redondea los bordes para crear un círculo */
+    margin: 10px; /* Añade espacio alrededor del avatar */
+}
+
+main {
+    margin-top: 150px; /* Mueve el contenido principal hacia abajo */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+main .main-logo {
+    width: 530px; /* Define el ancho máximo del logo */
+    margin: 0 auto; /* Centra horizontalmente el logo */
+    margin-bottom: 35px; /* Espaciado debajo del logo */
+}
+
+main .main-logo img {
+    height: 92px;
+    width: 272px; /* Escala proporcional del logo de Google */
+}
+
+main .main-input {
+    width: 530px; /* Ancho del contenedor de búsqueda */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-bottom: 35px; /* Espacio entre el input y los botones */
+}
+
+.main-input-container {
+    width: 525px; /* Ajusta el tamaño del cuadro de búsqueda */
+    border-radius: 100px; /* Bordes completamente redondeados */
+    border: 1px solid #dfe1e5; /* Borde claro para el contenedor */
+    display: flex; /* Flexbox para organizar los íconos e input */
+    justify-content: center;
+    align-items: center;
+}
+
+.main-input input {
+    width: 450px; /* Ancho del campo de entrada de texto */
+    height: 40px; /* Altura del cuadro de texto */
+    border: none; /* Sin bordes visibles */
+    outline: none; /* Elimina el contorno al enfocar */
+}
+
+.main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447; /* Efecto de sombra al pasar el ratón */
+    border-color: #dfe1e500; /* Hace invisible el borde al hover */
+}
+
+.main-input .search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png'); /* Ícono de lupa */
+    background-size: contain;
+    width: 18px;
+    height: 18px; /* Tamaño del ícono de búsqueda */
+}
+
+.main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png'); /* Ícono de micrófono */
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+}
+
+.main-buttons {
+    width: 530px; /* Ajusta el ancho total de los botones */
+    margin: 0 auto; /* Centra los botones horizontalmente */
+}
+
+.main-buttons div {
+    display: inline-block; /* Acomoda los botones en línea */
+}
+
+.main-buttons button {
+    height: 36px; /* Define la altura estándar de los botones */
+    background-color: #f2f2f2; /* Fondo claro */
+    border: 0; /* Sin bordes visibles */
+    font-size: 14px; /* Tamaño del texto dentro del botón */
+    color: #5f6368; /* Color del texto */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    padding: 0 15px; /* Espaciado interno horizontal */
+    margin-right: 15px; /* Separación entre botones */
+}
+
+.main-buttons button:hover {
+    border: 1px solid #c6c6c6; /* Agrega un borde sutil al hover */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #f8f8f8; /* Cambia el color del fondo al hover */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+}
+
+footer {
+    background-color: #f2f2f2; /* Fondo gris claro */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 90px; /* Define la altura del pie de página */
+    position: absolute; /* Posición fija en la parte inferior */
+    bottom: 0;
+    color: #70757a; /* Color del texto */
+    font-size: 15px; /* Tamaño de fuente para el footer */
+}
+
+footer p {
+    padding-left: 25px; /* Espacio a la izquierda del texto */
+    border-bottom: 1px solid #dadce0; /* Línea divisoria debajo del texto */
+    padding-bottom: 15px; /* Espacio debajo del texto */
+}
+
+footer .foot-section {
+    display: flex; /* Flexbox para alinear los enlaces en horizontal */
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Sin margen interno */
+}
+
+.left {
+    display: flex; /* Coloca los elementos en fila */
+    flex: 1; /* Ocupa el espacio disponible en su lado */
+}
+
+.left a {
+    padding-left: 30px; /* Espaciado entre los enlaces del lado izquierdo */
+    color: #70757a; /* Color gris claro para los enlaces */
+}
+
+.right {
+    display: flex; /* Elementos en fila en el lado derecho */
+}
+
+.right a {
+    padding-right: 25px; /* Espaciado entre los enlaces del lado derecho */
+    color: #70757a; /* Mantiene el color gris claro */
+}
